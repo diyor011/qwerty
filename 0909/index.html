@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="./style.css">
+</head>
+<body class="hu">
+   <!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilol - Dasturchi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+        }
+        .float { animation: float 3s ease-in-out infinite; }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+        .glow { animation: glow 2s ease-in-out infinite; }
+        .skill-card:hover { transform: translateY(-10px) scale(1.05); }
+        .skill-card { transition: all 0.3s ease; }
+        .gradient-text {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white min-h-screen">
+    <!-- Header -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-lg z-50 border-b border-blue-500/30">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold gradient-text">ivanov</h1>
+                <div class="space-x-6">
+                    <a href="#home" class="hover:text-blue-400 transition">Bosh sahifa</a>
+                    <a href="#skills" class="hover:text-blue-400 transition">Ko'nikmalar</a>
+                    <a href="#projects" class="hover:text-blue-400 transition">Loyihalar</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Aloqa</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="text-center fade-in-up">
+            <div class="mb-8 float">
+                <div class="w-40 h-40 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-6xl glow">
+                    👨‍💻
+                </div>
+            </div>
+            <h1 class="text-6xl font-bold mb-4 gradient-text">Salom, men ivanov bilol</h1>
+            <p class="text-2xl text-gray-300 mb-8">Professional Dasturchi</p>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+                Men zamonaviy veb-ilovalar yarataman va texnologiya orqali muammolarni yechaman. 
+                Har bir loyiha - bu yangi imkoniyat!
+            </p>
+            <div class="space-x-4">
+                <a href="#projects" class="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105">
+                    Loyihalarimni ko'rish
+                </a>
+                <a href="#contact" class="inline-block border-2 border-blue-600 hover:bg-blue-600 px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105">
+                    Bog'lanish
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Ko'nikmalarim</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="skill-card bg-gray-800/50 backdrop-blur p-6 rounded-xl border border-blue-500/30 hover:border-blue-500">
+                    <div class="text-4xl mb-4">⚛️</div>
+                    <h3 class="text-xl font-bold mb-2">React</h3>
+                    <p class="text-gray-400">Zamonaviy UI komponentlar yaratish</p>
+                </div>
+                <div class="skill-card bg-gray-800/50 backdrop-blur p-6 rounded-xl border border-purple-500/30 hover:border-purple-500">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                    <p class="text-gray-400">Interaktiv veb-ilovalar</p>
+                </div>
+                <div class="skill-card bg-gray-800/50 backdrop-blur p-6 rounded-xl border border-pink-500/30 hover:border-pink-500">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold mb-2">Tailwind CSS</h3>
+                    <p class="text-gray-400">Chiroyli dizaynlar</p>
+                </div>
+                <div class="skill-card bg-gray-800/50 backdrop-blur p-6 rounded-xl border border-green-500/30 hover:border-green-500">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">Node.js</h3>
+                    <p class="text-gray-400">Backend rivojlantirish</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-900/50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Mening Loyihalarim</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800/70 backdrop-blur rounded-xl overflow-hidden border border-blue-500/30 hover:border-blue-500 transition transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-6xl">
+                        🌐
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Platforma</h3>
+                        <p class="text-gray-400 mb-4">To'liq funksional onlayn do'kon</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-600/30 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-purple-600/30 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800/70 backdrop-blur rounded-xl overflow-hidden border border-purple-500/30 hover:border-purple-500 transition transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-6xl">
+                        📊
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dashboard Panel</h3>
+                        <p class="text-gray-400 mb-4">Ma'lumotlarni vizualizatsiya qilish</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-600/30 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-pink-600/30 px-3 py-1 rounded-full text-sm">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800/70 backdrop-blur rounded-xl overflow-hidden border border-green-500/30 hover:border-green-500 transition transform hover:scale-105">
+                    <div class="h-48 bg-gradient-to-br from-green-600 to-blue-600 flex items-center justify-center text-6xl">
+                        💬
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Chat Ilovasi</h3>
+                        <p class="text-gray-400 mb-4">Real-time xabar almashinuv</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-600/30 px-3 py-1 rounded-full text-sm">Socket.io</span>
+                            <span class="bg-blue-600/30 px-3 py-1 rounded-full text-sm">Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="text-4xl font-bold mb-8 gradient-text">Bog'lanish</h2>
+            <p class="text-xl text-gray-300 mb-12">Birgalikda ajoyib narsalar yaratalik!</p>
+            <div class="space-y-4">
+                <a href="mailto:bilol@example.com" class="block bg-gray-800/50 backdrop-blur p-4 rounded-lg border border-blue-500/30 hover:border-blue-500 transition">
+                    <span class="text-2xl mr-3">📧</span>
+                    <span class="text-lg">bilol@example.com</span>
+                </a>
+                <a href="https://github.com/bilol" class="block bg-gray-800/50 backdrop-blur p-4 rounded-lg border border-purple-500/30 hover:border-purple-500 transition">
+                    <span class="text-2xl mr-3">💻</span>
+                    <span class="text-lg">GitHub: @bilol</span>
+                </a>
+                <a href="https://t.me/bilol" class="block bg-gray-800/50 backdrop-blur p-4 rounded-lg border border-blue-500/30 hover:border-blue-500 transition">
+                    <span class="text-2xl mr-3">📱</span>
+                    <span class="text-lg">Telegram: @bilol</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/80 backdrop-blur py-8 text-center border-t border-blue-500/30">
+        <p class="text-gray-400">© 2024 Bilol. Barcha huquqlar himoyalangan.</p>
+        <p class="text-gray-500 mt-2">Sevgi bilan yaratilgan 💙</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.skill-card, section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>v
+    
+</body>
+</html>
